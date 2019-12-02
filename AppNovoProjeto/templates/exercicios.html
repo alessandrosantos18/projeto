@@ -1,0 +1,101 @@
+<!-- Extender do templates base -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- Bloco que define o title da pagina -->
+{% block title %}Pagina Inicial{% endblock %}
+
+<!-- Bloco de conteudo da pagina -->
+{% block conteudo %}
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">
+          
+        </a>
+        <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" data-target="#conteudo-navbar" 
+            aria-controls="conteudo-navbar" aria-expanded="false" 
+            aria-label="Ativar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudo-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'inicio' %}">
+                       Inicio
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'exercicio' %}">
+                      Exercicios
+                    </a>
+                </li>
+                <li class="nav-item a">
+                    <a class="nav-link" href="{% url 'agenda' %}">
+                      Agenda
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'alimentacao' %}">
+                      Alimentação
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'remedios' %}">
+                   Remédios
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'lista' %}">
+                      Lista de Remédios
+                    </a>
+                </li>
+                
+            </ul>           
+        </div>
+    </nav>
+    
+    <br><br>
+    
+    <h3>Execícios para pessoas com alzheimer</h3>
+    <br>
+    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rQ8Z7jVkQNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<br> 
+
+   <br>
+   <p>	Exercicios fisicos para pessoas com alzheimer Ajudar o indivíduo a movimentar-se mais livremente, mantendo alguma autonomia e mobilidade para se mexer na cama, sentar ou andar, por exemplo; </p>
+    <br>
+    <br>
+    <h4>Exercícios para Alzheimer inicial </h4>
+    <br>
+      <p>De forma geral, quando a pessoa descobre que está com Alzheimer deve realizar exercícios aeróbico, de força, equilíbrio e coordenação, por isso os casos mais recentes de Alzheimer, podem beneficiar-se de exercícios em grupo, com pesos e bolas, caminhada, corrida, natação, hidroginástica e Pilates.</p>
+	
+	<p>Outros exercícios também indicados são caminhada progressiva, mantendo conversa, e andar de bicicleta por no mínimo 30 minutos diários, porque este tipo de atividade melhora a função motora e respiratória, ainda proporciona ganhos cognitivos, melhorando a memória reduzindo a atrofia do hipocampo cerebral, sendo portanto um ótimo complemento para o tratamento e assim diminuir a progressão do Alzheimer. Exercícios de fortalecimento muscular, como a musculação também são bem-vindos. </p>
+	
+	<h4>Exercícios para Alzheimer intermédio</h4>
+	<br>
+	<p>Os exercícios que podem ser realizados em casa devem ser de fácil compreensão, para que o paciente consiga compreender e, devem ser semelhantes às atividades do dia-a-dia, de forma a aumentar ao mesmo tempo a atividade intelectual e motora. Estes devem ser realizados em breves períodos de tempo, várias vezes ao dia, para evitar a exaustão. Alguns exemplos são: </p>
+	<ul>
+		<li>Andar pelo quintal ou dançar;</li>
+		<li>Colocar uma bola de plástico em cima da cabeça e tentar equilibrar-se;</li>
+		<li>Treinar o escovar o dentes e pentear o seu próprio cabelo e do cuidador;</li>
+		<li>Apertar os botões da blusa;</li>
+		<li>Ficar num pé só;</li>
+		<li>Andar de lado e também em forma de circuito;</li>
+		<li>Elevação de braços usando pesinhos de 2-3 kg;</li>
+		<li>Agachamentos encostado na parede;</li>
+		<li>Caminhar colocando um pé à frente do outro;</li>
+	</ul>
+	
+	<br>
+	<h4>Exercícios para Alzheimer Avançado </h4>
+	<p>No Alzheimer avançado a pessoa pode encontrar-se acamada ou com dificuldade em equilibrar-se mesmo sentado. Nesse caso deve-se fazer fisioterapia todos os dias com um fisioterapeuta, para evitar que o doente perca massa muscular e fique com os músculos e articulações atrofiadas, que trazem dor e desconforto, e ainda dificultam a própria higiene. </p>
+	
+	<p>O fisioterapeuta deve indicar execícios simples de fortalecimento e alongamento, pedindo sempre que possível colaboração do paciente. Outras técnicas como mobilização, e uso de recursos como TENS, ultrassom, infravermelho e outros recursos termo terapêuticos também podem ser usados.</p>
+	
+
+{% endblock %}
